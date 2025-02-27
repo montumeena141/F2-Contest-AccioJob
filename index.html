@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test-2</title>
+    <title>Counter</title>
     <style>
-
+        body {
+            background-color: black;
+            color: white;
+            
+        }
+        span {
+            border-bottom: 2px solid white;
+            font-size: 24px;
+            display: inline-block;
+            padding: 5px;
+        }
+        .buttons {
+            margin-top: 18px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #error {
+            color: red;
+            margin-top: 10px;
+            font-size: 18px;
+            display: none;
+        }
     </style>
 </head>
 <body>
     <h1>Counter using HTML</h1>
+    <span>Your Current Count is: <b id="count">1</b></span>
+    <p id="error">Error: cannot go below 0</p>
+    <div class="buttons">
+        <button id="decrement">Decrement</button>
+        <button id="increment">Increment</button>
+        <button id="clear">Clear</button>
+    </div>
+   
+
+    <script src="script.js">
+    </script>
 </body>
 </html>
